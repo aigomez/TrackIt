@@ -1,0 +1,333 @@
+/* Login y Join */
+
+.btns-user {
+  justify-content: flex-end;
+  padding: 1% 1%;
+}
+
+.btn-login, .btn-logout {
+  background: none;
+  border: 0;
+  outline: none;
+  color: white;
+  text-shadow: 0 0 20px #000;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 19px;
+  cursor: pointer;
+}
+
+/* Wallpaper Inicial */
+
+.loading-img {
+  text-align: center;
+  top: 400px;
+  position: relative;
+  height: 800px;
+}
+
+.wall {
+  background: url('../Imgs/Wall4.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 800px;
+}
+
+.wall > img {
+  display: none;
+}
+
+.title, .slogan {
+  justify-content: center;
+  text-shadow: 0 0 20px #000;
+  color: white;
+  font-weight: bold;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 80px;
+  border-bottom: 2px solid white;
+  width: 25%;
+  padding: 8% 0 4% 0;
+}
+
+.slogan {
+  font-size: 50px;
+  padding: 3%;
+  margin-bottom: 3%;
+}
+
+.btn-join {
+  background: #da255d;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 10px 10px;
+  width: 500px;
+  line-height: 3;
+  transition: 0.3s ease-out;
+}
+
+.btn-join:hover {
+  filter: contrast(200%);
+  transition: 0.3s ease-in;
+}
+
+.btn-join > span {
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* Count */
+
+.count {
+  background: rgb(230,112,112);
+  background: linear-gradient(90deg, rgba(230,112,112,1) 0%, rgba(155,112,230,1) 100%);
+  border-radius: 10px;
+  color: white;
+  position: relative;
+  padding: 1.5%;
+  width: 75%;
+  margin: 3% auto;
+  font-weight: 500;
+  font-size: 22px;
+  text-align: center;
+}
+
+.count > span {
+  margin: 0 2.5%;
+}
+
+/* Barra horizontal */
+
+.header {
+  width: 90%;
+  padding: 1% 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1% auto;
+}
+
+.transition-out {
+  transition: 0.4s ease-out;
+}
+
+/* Busqueda */
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 32em;
+  left: 0;
+  padding: 0 1%;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 2px solid #ff005f;
+  padding: 10px;
+  border-radius: 15px 0 0 5px;
+  font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  outline: none;
+}
+
+.searchTerm::-webkit-input-placeholder {
+  color: #808080;
+}
+
+.searchButton {
+  width: 50px;
+  height: 44px;
+  border: 1px solid #ff005f;
+  background: #ff005f;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  font-size: 20px;
+}
+
+/* Botones */
+
+.btns-header {
+  width: 11%;
+  justify-content: space-around;
+  background: linear-gradient(#e67070, #e67070) no-repeat center/2px 100%;
+}
+
+.fa-heart, .fa-book {
+  font-size: 35px;
+  color: #ff005f;
+}
+
+/* Libreria - Semantic UI */
+
+#PeliculasySeries, #Peliculas, #Series {
+  padding: 0 0 !important;
+}
+
+.label {
+  display: none !important;
+}
+
+/* Flechitas y Clear */
+.ui.dropdown {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ui.dropdown .menu .menu {
+  margin: -1em 0 0 1.2em !important;
+}
+
+.dropdown .icon{
+  margin: 0.7em -1em 0 1em !important;
+}
+
+.clear {
+  color: #ff005f !important;
+  transform: scale(1.8) !important;
+  left: -20px !important;
+  top: -5px !important;
+}
+
+/* Items */
+
+.ui.dropdown .scrolling.menu, .ui.scrolling.dropdown .menu {
+  max-height: 30rem !important;
+}
+
+.menu {
+  margin: 1em 0em !important;
+}
+
+.ui.dropdown .menu > .sub-items > div {
+  position: relative;
+  cursor: pointer;
+  display: block;
+  border: none;
+  height: auto;
+  text-align: left;
+  border-top: none;
+  line-height: 1em;
+  color: rgba(0,0,0,.87);
+  padding: .78571429rem 1.14285714rem!important;
+}
+
+.selected {
+  background-color: transparent !important;
+}
+
+.header {
+  color: #ff8a05 !important;
+}
+
+.item {
+  font-size: 15px !important;
+  font-weight: 600 !important;
+}
+
+.item:hover {
+  background: #7a88ff !important;
+  color: white !important;
+}
+
+.active, .active:hover {
+  background-color: #ff005f !important;
+  color: white !important;
+}
+
+/* Filtros */
+
+.filtros {
+  align-items: center;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  color: white;
+}
+
+.filtros-i {
+  margin: 0 2% 0 0;
+  font-size: 30px;
+  color: #ff005f;
+}
+
+.filtros-select {
+  width: 26em;
+  color: black !important;
+  background-color: transparent  !important;
+  font-size: 16px;
+  border: 2px solid #ff005f;
+  border-radius: 15px 5px;
+  padding: 7px 12px;
+}
+
+.filtros-select:hover {
+  color: black !important;
+  background-color: transparent  !important;
+}
+
+.filtros-select > .text {
+  padding-top: 3px;
+}
+
+@-moz-document url-prefix() {
+  .searchTerm::-moz-placeholder {
+    color: black;
+  }
+}
+
+/* Sticky Header */
+
+.stickyColor {
+  background: #ff005f;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.transition-in {
+  transition: 0.3s ease-in;
+}
+
+/* Iconos */
+.stickyColor > .header > .btns-header {
+  background: linear-gradient(white, white) no-repeat center/2px 100%;
+}
+
+.stickyColor > .header > .btns-header > a > .fa-book,
+.stickyColor > .header > .btns-header > a > .fa-heart,
+.stickyColor > .header > .filtros > .filtros-i {
+  color: white;
+}
+
+/* Busqueda */
+.stickyColor > .header > .search > .searchButton {
+  background: white;
+  border: 2px solid white;
+  border-left: 1px solid #1F91B2;
+  color: #1F91B2;
+}
+
+.stickyColor > .header > .search > .searchTerm {
+  border: 2px solid white;
+}
+
+/* Filtros */
+.stickyColor > .header > .filtros > .filtros-select {
+  border: 2px solid white;
+  background: white !important;
+}
+
+.stickyColor > .header > .filtros > .filtros-select:hover {
+  color: black !important;
+  background-color: white !important;
+}
+
+.stickyColor > .header > .filtros > .filtros-select > .clear {
+  color: #1F91B2 !important;
+}

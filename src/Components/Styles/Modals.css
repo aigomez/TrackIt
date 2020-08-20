@@ -1,0 +1,230 @@
+/* Inputs */
+.inside-input {
+  cursor: pointer;
+  position: relative;
+  display: inline;
+  width: 100%;
+}
+
+.fa-eye, .fa-eye-slash {
+  position: absolute;
+  top: 0px;
+  user-select: none;
+  font-size: 18px;
+}
+
+/* Globals */
+
+.Modal {
+  outline: none;
+  background: white;
+  margin: 4.5% 0% 2% 25%;
+  padding: 0.5% 2% 2.5% 2%;
+  width: 50%;
+  border-radius: 15px 50px 30px;
+}
+
+@media only screen and (min-width: 1920px) {
+   .Modal {
+     margin: 8.5% 0% 2% 25%;
+   }
+}
+
+.Overlay {
+  overflow-y: scroll;
+  z-index: 99;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(98, 97, 140, 0.76);
+}
+
+.mtop {
+  margin-top: 10%;
+}
+
+/* Inputs */
+
+.input {
+  outline: none;
+  border: 0;
+  border-bottom: 1.1px solid #9a34f0;
+  margin: 1.5%;
+  width: 30%;
+  line-height: 2;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+.input:focus {
+  border-bottom: 1.1px solid #F09A34;
+}
+
+.new-icon {
+  width: 5%;
+  font-size: 17.5px;
+}
+
+.icon-top {
+  position: relative;
+  top: 4px;
+}
+
+.input-imagen {
+  text-transform: none;
+}
+
+.input-descripcion {
+  resize: none;
+  width: 50%;
+  height: 300px;
+  border-top: 1.1px solid #9a34f0;
+}
+
+.input-descripcion:focus {
+  border-top: 1.1px solid #F09A34;
+}
+
+.input-tipo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-genero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1% 1%;
+  width: 100%;
+}
+
+/* Radio Button */
+.rButton, input[type = radio] {
+  cursor: pointer;
+  width: 1.3em;
+  height: 1.3em;
+  vertical-align: middle;
+  line-height: 3;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+}
+
+input[type = radio] {
+  position: relative;
+  top: -2px;
+}
+
+.m-left {
+  margin-left: 10%;
+}
+
+.input-links {
+  margin-top: 2%;
+}
+
+/* Iconos */
+
+.black-icon {
+  color: black;
+}
+
+.icon-bookmark {
+  position: relative;
+  top: -300px;
+}
+
+.reset-icon {
+  position: relative;
+  margin-right: 2%;
+  font-size: 22px;
+  top: 2.5px;
+  cursor: pointer;
+}
+
+/* Btns */
+
+.btn-Submit {
+  border: 0;
+  border-radius: 5px 5px;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  background: #9a34f0;
+  color: white;
+  font-size: 15px;
+  padding: 1.5% 4%;
+  margin-top: 3%;
+  transition: 0.2s ease-out;
+}
+
+.btn-Submit:hover {
+  background: #F09A34;
+  transition: 0.2s ease-in;
+}
+
+.btn-Close {
+  position: relative;
+  right: -45%;
+  top: 0;
+  border: 0;
+  outline: none;
+  font-size: 35px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  background: none;
+  transition: 0.2s ease-out;
+  color: #ccc;
+}
+
+.btn-Close:hover {
+  color: #F09A34;
+  transition: 0.2s ease-in;
+}
+
+/* Item seleccionado */
+
+.selected-Modal {
+  outline: none;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.selected-cont {
+  background-color: #efefef;
+  padding: 3% 6%;
+  border-radius: 15px 50px 30px;
+}
+
+.selected-cont > p {
+  padding: 0.5% 0;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.selected-imagen {
+  margin: 4% 0;
+  width: 28%;
+  border: 8px #efefef solid;
+  border-radius: 3%;
+}
+
+.selected-tipo {
+  text-transform: capitalize;
+}
+
+.selected-descripcion {
+  overflow-wrap: break-word;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap; /* Firefox */
+  padding: 0 3%;
+}
+
+.icon {
+  margin-right: 0.5%;
+  font-size: 18px;
+}

@@ -1,0 +1,129 @@
+/* Biblioteca y Favoritos */
+
+.items {
+  margin: 2% 5% 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.items > div {
+  width: 16.5%;
+  text-align: center;
+  margin-bottom: 4%;
+}
+
+.thumbnail {
+  filter: saturate(70%);
+  cursor: pointer;
+  outline: none;
+  box-shadow: 5px 5px 20px rgba(86, 86, 86, 0.71);
+  transition: 0.2s ease-out;
+  border-radius: 20px 20px;
+
+  width:  75%;
+  height: 60%;
+  object-fit: cover;
+}
+
+.thumbnail:hover {
+  filter: saturate(130%);
+  transition: 0.2s ease-in;
+}
+
+.div-initial > p {
+  width: 70%;
+  margin: 7% auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+}
+
+.fa-tag {
+  color: #ff1900;
+}
+
+.fa-calendar-alt {
+  color: #ff00e6;
+}
+
+.fa-star {
+  color: #f03465;
+}
+
+/* Biblioteca */
+
+.visto {
+  outline: none;
+  background: rgb(42,81,113);
+  background: linear-gradient(90deg, rgba(42,81,113,1) 0%, rgba(68,112,149,1) 100%);
+  padding: 4% 18%;
+  color: white;
+  border-radius: 30px;
+  border: 0;
+  cursor: pointer;
+  transition: 0.2s ease-out;
+}
+
+.ver-despues {
+  background: rgb(113,42,42);
+  background: linear-gradient(90deg, rgba(113,42,42,1) 0%, rgba(149,68,68,1) 100%);
+}
+
+.visto, .ver-despues {
+  margin: 2% 0;
+}
+
+.visto:hover, .ver-despues:hover {
+  filter: brightness(140%);
+  transition: 0.2s ease-in;
+}
+
+.btn-add {
+  font-size: 15px;
+}
+
+.visto > p, .ver-despues > p {
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Favoritos */
+
+.fav-sinDatos > i {
+  padding: 3% 0 4% 0;
+  font-size: 150px;
+  color: #e2894b;
+}
+
+.fav-sinDatos > p {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 6%;
+}
+
+.edit {
+  margin-right: 4%;
+}
+
+.edit, .delete {
+  cursor: pointer;
+  outline: none;
+  background: #F09A34;
+  border: 1px dotted #F09A34;
+  border-radius: 32%;
+  padding: 3%;
+  transition: 0.27s ease-out;
+}
+
+.edit:hover, .delete:hover {
+  filter: saturate(400%);
+  transition: 0.27s ease-in;
+}
+
+.fa-pencil-alt, .fa-trash-alt {
+  cursor: pointer;
+  color: white;
+  font-size: 16px;
+}
